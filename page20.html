@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+  <title>CYOA</title>
+
+  <style>
+    body {
+      margin: 20px;
+      color: #1a1a1a;
+      animation: colors 12s infinite;
+      font-family: sans-serif;
+    }
+
+    @keyframes colors {
+      0%   { background-color: #F5F5DC; }
+      50%  { background-color: #B7410E; }
+      100% { background-color: #F5F5DC; }
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+   
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+   
+    .text-col {
+      flex: 1;
+    }
+
+    .image-col {
+      flex: 1;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      margin: 0 0 15px 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .rounded-img {
+      width: 375px;
+      height: 375px;
+      border-radius: 20px;
+      object-fit: cover;
+      display: inline-block;
+    }
+
+    .content-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+   
+    .choices {
+      margin-top: 50px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    a {
+      display: inline-block;
+      width: 49%;
+      font-size: 22px;
+      text-align: center;
+    
+      color: #1a1a1a;
+      
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+
+    @media (max-width: 600px) {
+      .row {
+        flex-direction: column 
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content-container">
+    <h1>Patricia drops the torch to see the underwater passage</h1>
+
+    
+    <div class="row">
+      <div class="text-col">
+        <p>
+          The torch slipped from her fingers, tumbling onto the stone floor with a hiss as its flame met a thin stream of water.
+          Darkness swallowed the cave for a heartbeat — then the world shifted.
+        </p>
+        <p>
+          A soft blue glow rose from the pool before her, illuminating an underwater passage that shimmered like liquid glass.
+          The air grew cooler, heavy with the scent of minerals and mystery.
+          But as she leaned closer, another light flickered to life — faint, green, and pulsing — from a narrow tunnel to her right.
+          She froze. The blue light beckoned with calm, steady rhythm, promising depth and discovery.
+        </p>
+      </div>
+      <div class="image-col">
+        <img src="images/cave1.png" alt="japanese girl red shirt holding torch at cave entrance" class="rounded-img">
+      </div>
+    </div>
+
+    
+    <div class="row">
+      <div class="image-col">
+        <img src="images/cavepuzzle.42.png" alt="japanese girl red shirt holding torch at cave entrance" class="rounded-img">
+      </div>
+      <div class="text-col">
+        <p>
+          The green light, however, danced erratically, like a heartbeat in the shadows. It felt alive. Watching.
+          Her mind raced. The blue passage whispered of knowledge, of ancient secrets buried beneath the earth.
+          The green light hummed with energy, wild and unpredictable — perhaps a warning, perhaps a call.
+        </p>
+        <p>
+          She crouched beside the extinguished torch, its smoke curling upward like a question.
+          The cave seemed to breathe around her.
+        </p>
+      </div>
+    </div>
+
+  
+    <div class="choices">
+      <a href="page7.html">Go Left</a>
+      <a href="page9.html">Go Right</a>
+    </div>
+  </div>
+
+</body>
+</html>
